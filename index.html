@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevgilim ve Ben - Notlar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Notlarını Kaydet 💖</h1>
+    <button id="login">Google ile Giriş Yap</button>
+    <button id="logout" style="display: none;">Çıkış Yap</button>
+    
+    <div id="notlar" style="display: none;">
+        <textarea id="notAlani" placeholder="Buraya notunu yaz..."></textarea>
+        <button id="kaydet">Kaydet</button>
+        <h2>Notlarım</h2>
+        <ul id="nottListesi"></ul>
+    </div>
+</body>
+</html>
